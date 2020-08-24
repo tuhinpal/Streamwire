@@ -1,21 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+    <head>
+	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Streamwire Video Embed Without Ads</title>
+		<link rel="shortcut icon" href="/swasset/favicon.ico">
+		
+    </head>
 <body>
 
-<h1>Streamwire</h1>
-
-
-<input type="text" id="field1" placeholder="Video ID" value=""><br>
-
-<button onclick="myFunction()">Generate</button>
-
-<p id="output"></p>
+<p style="text-align: center;"><img src="logo.svg" alt="Streamwire LOGO" width="274" height="110" /></p>
+<br><p style="text-align: center;"><strong>Embed Your Streamwire Video without any ADS (Also Bypass ISP Blocking)</strong></p>
+<div style="text-align: center;">
+<input id="videoid" type="text" value="" placeholder="Video ID" />
+<p style="text-align: center;"><strong><em>ex.</em></strong></p>
+<p style="text-align: center;"><em><span style="color: #00ff00;">https://streamwire.net/<span style="color: #ff0000;">cm1tw5gfe4ii</span></span></em></p>
+<p style="text-align: center;"><em><span style="color: #00ff00;">https://streamwire.net/e/<span style="color: #ff0000;">cm1tw5gfe4ii</span></span></em></p>
+<p style="text-align: center;"><em><span ><span style="color: #ff0000;">* Red Marked is VideoID</span></span></em></p>
+<br><br><button onclick="generateF()">Generate</button>
+</div>
+<br><br>
+<div style="text-align: center;">
+<p id="embedlink"></p>
+</div>
+<br><br>
+<div style="text-align: center;">
+<p id="embedcode"></p>
+</div>
+<p style="text-align: center;"><span style="color: #ff0000;"><em>*all tracking and all ad js are blocked. So, you may not be able generate money.</em></span></p>
+<p style="text-align: center;"><strong>This Project is made by&nbsp;<a title="Tuhin" href="https://tu.hin.life" target="_blank" rel="noopener">Tuhin</a>&nbsp;. This Project is Open source also. You will get it From&nbsp;<a title="Github" href="https://github.com/cachecleanerjeet/StreamWire" target="_blank" rel="noopener">Github</a></strong></p>
 
 <script>
-function myFunction() {
-  document.getElementById("output").innerHTML = "https://embed.streamwire.cf/" + document.getElementById("field1").value;
+function generateF() {
+  var vidid = document.getElementById("videoid").value;
+  document.getElementById("embedlink").innerHTML = "Embeded Link:<br><br>" + "https://embed.streamwire.cf/" + vidid
+  document.getElementById("embedcode").innerHTML = "Embed Code:<br><br>" + "https://embed.streamwire.cf/" + vidid
+
 }
 </script>
-
-</body>
-</html>
