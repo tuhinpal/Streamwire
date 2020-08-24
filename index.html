@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Streamwire</h1>
+
+
+<input type="text" id="field1" placeholder="Video ID" value=""><br>
+
+<button onclick="myFunction()">Generate</button>
+
+<p id="output"></p>
+
+<script>
+function myFunction() {
+  document.getElementById("output").innerHTML = "https://streamwire.cf/" + document.getElementById("field1").value;
+}
+</script>
+
+</body>
+</html>
