@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -9,30 +10,116 @@
 		<link rel="shortcut icon" href="/swasset/favicon.ico">
 		
     </head>
-<body>
-
-<p style="text-align: center;"><img src="logo.svg" alt="Streamwire Zero ADS" width="274" height="110" /></p>
-<br><p style="text-align: center;"><strong>Embed Your Streamwire Video without any ADS (Also Bypass ISP Blocking)</strong></p>
-<div style="text-align: center;">
-<input id="videoid" type="text" value="" placeholder="Video ID" />
-<p style="text-align: center;"><strong><em>ex.</em></strong></p>
-<p style="text-align: center;"><em><span style="color: #00ff00;">https://streamwire.net/<span style="color: #ff0000;">cm1tw5gfe4ii</span></span></em></p>
-<p style="text-align: center;"><em><span style="color: #00ff00;">https://streamwire.net/e/<span style="color: #ff0000;">cm1tw5gfe4ii</span></span></em></p>
-<p style="text-align: center;"><em><span ><span style="color: #ff0000;">* Red Marked is VideoID</span></span></em></p>
-<br><br><button onclick="generateF()">Generate</button>
-</div>
-<br><br>
-<div style="text-align: center;">
-<p id="embedlink"></p>
+<body onload="hideF()">
+<script>
+function hideF() {
+document.getElementById("embedlink").style.visibility = "hidden"; 
+}
+</script>
+<style>
+.gb {
+	box-shadow: 2px 2px 3px 2px #3dc21b;
+	background:linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
+	background-color:#44c767;
+	border-radius:16px;
+	border:2px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Trebuchet MS;
+	font-size:19px;
+	font-weight:bold;
+	padding:10px 43px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+.gb:hover {
+	background:linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
+	background-color:#5cbf2a;
+}
+.gb:active {
+	position:relative;
+	top:1px;
+}
+.vi { 
+    border: 1px solid #848484; 
+    -webkit-border-radius: 30px; 
+    -moz-border-radius: 30px; 
+    border-radius: 30px; 
+	font-size:19px;
+	font-weight:bold;
+    outline:0; 
+	font-family:Trebuchet MS;
+    height:30px; 
+    width: 250px; 
+    padding-left:10px; 
+    padding-right:10px; 
+} 
+.vo { 
+    border: 1px solid #848484; 
+    -webkit-border-radius: 30px; 
+    -moz-border-radius: 30px; 
+    border-radius: 30px; 
+	font-size:14px;
+	font-weight:bold;
+    outline:0; 
+	font-family:Trebuchet MS;
+    height:30px; 
+    width: 260px; 
+    padding-left:10px; 
+    padding-right:10px; 
+} 
+.tu {
+   text-align: center;
+   font-family:Trebuchet MS;
+}
+.hin {
+   text-align: center;
+   font-family:Trebuchet MS;
+   font-size:19px;
+   font-weight:bold;
+   
+}
+.life {
+   text-align: center;
+   font-family:Trebuchet MS;
+   font-weight:bold;
+   
+}
+</style>
+<p class="tu"><img src="logo.svg" alt="Streamwire Zero ADS" width="274" height="110" /></p>
+<br>
+<p class="hin">Embed Your Streamwire Video without any ADS (Also Bypass ISP Blocking)</p>
+<br>
+<div class="tu">
+<input class="vi" id="videoid" type="text" value="" placeholder="Insert Video ID" />
+<p class="tu"><strong><em>ex.</em></strong></p>
+<p class="tu"><em><span style="color: #00ff00;">https://streamwire.net/<span style="color: #ff0000;">cm1tw5gfe4ii</span></span></em></p>
+<p class="tu"><em><span style="color: #00ff00;">https://streamwire.net/e/<span style="color: #ff0000;">cm1tw5gfe4ii</span></span></em></p>
+<p class="tu"><em><span ><span style="color: #ff0000;">* Red Marked is VideoID</span></span></em></p>
+<br>
+<button class="button gb" onclick="generateF()">Generate</button>
 </div>
 <br>
-<p style="text-align: center;"><span style="color: #ff0000;"><em>*all tracking and all ad js are blocked. So, you may not be able generate money.</em></span></p>
-<p style="text-align: center;"><strong>This Project is made by&nbsp;<a title="Tuhin" href="https://tu.hin.life" target="_blank" rel="noopener">Tuhin</a>&nbsp;. This Project is Open source also. You will get it From&nbsp;<a title="Github" href="https://github.com/cachecleanerjeet/StreamWire" target="_blank" rel="noopener">Github</a></strong></p>
-
+<br>
+<p class="life" id="embedtext"></p>
+<div class="tu">
+<input class="vo" id="embedlink" /><br>
+</div>
+<br>
+<p class="tu"><span style="color: #ff0000;"><em>*all tracking and all ad js are blocked. So, you may not be able generate money.</em></span></p>
+<p class="tu"><strong>This Project is made by&nbsp;<a title="Tuhin" href="https://tu.hin.life" target="_blank" rel="noopener">Tuhin</a>&nbsp;. This Project is Open source also. You will get it From&nbsp;<a title="Github" href="https://github.com/cachecleanerjeet/StreamWire" target="_blank" rel="noopener">Github</a></strong></p>
+</body>
 <script>
 function generateF() {
   var vidid = document.getElementById("videoid").value;
-  document.getElementById("embedlink").innerHTML = "Embeded Link:<br><br>" + "https://embed.streamwire.cf/" + vidid
+document.getElementById("embedtext").innerHTML = "Embeded Link:<br><br>";
+document.getElementById("embedlink").style.visibility = "visible";
+document.getElementById("embedlink").value = "https://embed.streamwire.cf/" + vidid ;
+document.getElementById("embedlink").select();
 
 }
+  
+ 
 </script>
+</html>
