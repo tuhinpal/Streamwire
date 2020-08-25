@@ -1,5 +1,5 @@
 ## Embed Your Streamwire Video without any ADS
-Made using Cloudflare Workers and Freenom's Free Domain
+*Made using Cloudflare Workers and Freenom's Free Domain and Github Pages*
 
 https://streamwire.cf
 
