@@ -3,6 +3,8 @@ Made using Cloudflare Workers and Freenom's Free Domain
 
 https://streamwire.cf
 
+### Limitation:
+*all tracking and all ad js are blocked. So, you may not be able generate money.*
 
 ### Credits:
 
