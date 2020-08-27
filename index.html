@@ -104,8 +104,7 @@ document.getElementById("outstyle").style.visibility = "hidden";
 }
 </style>
 <div id="instyle">
-<p class="tu"><img src="logo.svg" alt="Streamwire Zero ADS" width="274" height="110" /></p>
-<br>
+<p class="tu"><img src="logo.svg" alt="Streamwire Zero ADS" width="230" height="100" /></p>
 <p class="hin">Embed Your Streamwire Video without any ADS (Also Bypass ISP Blocking)</p>
 <br>
 <div class="tu">
@@ -115,15 +114,14 @@ document.getElementById("outstyle").style.visibility = "hidden";
 </div>
 </div>
 <div id="outstyle">
-<p class="life" id="embedtext"></p>
+<p class="tu">Embeded No AD Link:</p>
 <div class="tu" id="outd">
 <input class="vi" id="embedlink" readonly="true"/><br><br>
 <button class="button copyb" onclick="copyF()">Copy</button>
-<br><br>
+<br>
 <p class="tu" onclick="genAN()"><a>Generate Another</a></p>
 </div>
 </div>
-<br>
 <div id="footer">
 <p class="tu"><span style="color: #ff0000;"><em>*all tracking and all ad js are blocked. So, you may not be able generate money.</em></span></p>
 <p class="tu"><strong>This Project is made by&nbsp;<a title="Tuhin" href="https://tu.hin.life" target="_blank" rel="noopener">Tuhin</a>. This Project is Open source also. You will get it From&nbsp;<a title="Github" href="https://github.com/cachecleanerjeet/StreamWire" target="_blank" rel="noopener">Github</a>.</strong></p>
@@ -135,7 +133,6 @@ function generateF() {
   var resa = vidid.replace("https://streamwire.net/", "");
   var resb = resa.replace("e/", "");
   var resc = resb.replace("#", "");
-document.getElementById("embedtext").innerHTML = "Embeded Link:<br><br>";
 document.getElementById("outstyle").style.visibility = "visible";
   document.getElementById("instyle").style.visibility = "hidden";
   document.getElementById("footer").style.visibility = "hidden";
