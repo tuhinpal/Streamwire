@@ -7,6 +7,7 @@ const https = true
 const disable_cache = false
 
 const replace_dict = {
+    'global.storeacdn.com':'fukof',
     '$upstream': 'streamwire.net',
 	'/css/main.css' : '//streamwire.cf/swasset/main.css',
 	'/favicon.ico' : '//streamwire.cf/swasset/favicon.ico',
@@ -18,6 +19,7 @@ const replace_dict = {
 	'/player_hola/videojs.hotkeys.min.js' : '//streamwire.cf/swasset/videojs.hotkeys.min.js',
     'bcloudhost.com' : '',
     '<div id="adbd" class="overdiv">' : '<div>',
+    'googletagmanager.com' : 'notracking',
     '<div>Disable ADBlock plugin and allow pop-ups in your browser to watch video</div>' : '',
     '<div id="play_limit_box">' : '<div>',
     'Upgrade you account' : '',
@@ -131,13 +133,13 @@ async function replace_response_text(response, upstream_domain, host_name) {
         j = replace_dict[i]
         if (i == '$upstream') {
             i = upstream_domain
-        } else if (i == 'streamwire.nocensor.ga') {
+        } else if (i == 'streamwire.net') {
             i = host_name
         }
 
         if (j == '$upstream') {
             j = upstream_domain
-        } else if (j == 'streamwire.nocensor.ga') {
+        } else if (j == 'streamwire.net') {
             j = host_name
         }
 
