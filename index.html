@@ -9,61 +9,35 @@
 		<meta name="author" content="Tuhin Kanti Paul">
 		<title>Streamwire Video Embed Without Ads</title>
 		<link rel="shortcut icon" href="/swasset/favicon.ico">
+		<link href="https://fonts.googleapis.com/css?family=Krona+One" rel="stylesheet" />
 		
     </head>
 <body onload="hideF()">
 <script>
 function hideF() {
-document.getElementById("outstyle").style.visibility = "hidden"; 
+document.getElementById("outstyle").style.display = "none"; 
 }
 </script>
 <style>
 .gb {
-	box-shadow: 2px 2px 3px 2px #3dc21b;
-	background:linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
-	background-color:#44c767;
-	border-radius:16px;
-	border:2px solid #18ab29;
+	background:linear-gradient(to bottom, #000000 5%, #000000 100%);
+	background-color:#000000;
+	border-radius:15px;
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
-	font-family:Trebuchet MS;
+	font-family:Krona One;
 	font-size:19px;
 	font-weight:bold;
 	padding:10px 43px;
 	text-decoration:none;
-	text-shadow:0px 1px 0px #2f6627;
 }
 
 .gb:hover {
-	background:linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
+	background:linear-gradient(to bottom, #000000 5%, #000000 100%);
 	background-color:#5cbf2a;
 }
 .gb:active {
-	position:relative;
-	top:1px;
-}
-.copyb {
-	box-shadow: 2px 2px 3px 2px #3dc21b;
-	background:linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
-	background-color:#44c767;
-	border-radius:16px;
-	border:2px solid #18ab29;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Trebuchet MS;
-	font-size:19px;
-	font-weight:bold;
-	padding:6px 25px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #2f6627;
-}
-.copyb:hover {
-	background:linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
-	background-color:#5cbf2a;
-}
-.copyb:active {
 	position:relative;
 	top:1px;
 }
@@ -77,28 +51,42 @@ document.getElementById("outstyle").style.visibility = "hidden";
    border-radius:10px; 
    border-width:1px; 
    text-shadow:0px 0px 0px rgba(42,42,42,.55); 
-   font-family:Trebuchet MS; 
+   font-family:Krona One; 
    font-weight:bold;  
  } 
 .vi:focus { outline:none; 
 } 
 .tu {
    text-align: center;
-   font-family:Trebuchet MS;
-   color:#2f9e4d;
-   font-size:18px;
+   font-family:Krona One;
+   font-size:12px;
+   font-weight:bold;
+}
+.rtu {
+   padding-top: 60px;
+   text-align: center;
+   font-family:Krona One;
+   font-size:12px;
+   font-weight:bold;
+}
+.smalltext {
+   padding-top:100px;
+   text-align: center;
+   font-family:Krona One;
+   color:#000000;
+   font-size:10px;
    font-weight:bold;
 }
 .hin {
    text-align: center;
-   font-family:Trebuchet MS;
-   font-size:19px;
+   font-family:Krona One;
+   font-size:14px;
    font-weight:bold;
    
 }
 .life {
    text-align: center;
-   font-family:Trebuchet MS;
+   font-family:Krona One;
    font-weight:bold;
    
 }
@@ -114,17 +102,17 @@ document.getElementById("outstyle").style.visibility = "hidden";
 </div>
 </div>
 <div id="outstyle">
-<p class="tu">Embeded No AD Link:</p>
+<p class="rtu">Embeded No AD Link:</p>
 <div class="tu" id="outd">
 <input class="vi" id="embedlink" readonly="true"/><br><br>
-<button class="button copyb" onclick="copyF()">Copy</button>
+<button class="button gb" onclick="copyF()">Copy</button>
 <br>
 <p class="tu" onclick="genAN()"><a>Generate Another</a></p>
 </div>
 </div>
 <div id="footer">
-<p class="tu"><span style="color: #ff0000;"><em>*all tracking and all ad js are blocked. So, you may not be able generate money.</em></span></p>
-<p class="tu"><strong>This Project is made by&nbsp;<a title="Tuhin" href="https://tu.hin.life" target="_blank" rel="noopener">Tuhin</a>. This Project is Open source also. You will get it From&nbsp;<a title="Github" href="https://github.com/cachecleanerjeet/StreamWire" target="_blank" rel="noopener">Github</a>.</strong></p>
+<p class="smalltext"><em>*all tracking and all ad js are blocked. So, you may not be able generate money.</em></p>
+<p class="tu">This Project is made by&nbsp;<a title="Tuhin" href="https://tu.hin.life" target="_blank" rel="noopener">Tuhin</a>. This Project is Open source also. You will get it From&nbsp;<a title="Github" href="https://github.com/cachecleanerjeet/StreamWire" target="_blank" rel="noopener">Github</a>.</p>
 </div>
 </body>
 <script>
@@ -133,9 +121,8 @@ function generateF() {
   var resa = vidid.replace("https://streamwire.net/", "");
   var resb = resa.replace("e/", "");
   var resc = resb.replace("#", "");
-document.getElementById("outstyle").style.visibility = "visible";
-  document.getElementById("instyle").style.visibility = "hidden";
-  document.getElementById("footer").style.visibility = "hidden";
+document.getElementById("outstyle").style.display = "block";
+  document.getElementById("instyle").style.display = "none";
 document.getElementById("embedlink").value = "https://embed.streamwire.cf/" + resc ;
 document.getElementById("embedlink").select();
 }
@@ -145,9 +132,8 @@ function copyF() {
   alert("Link Copied");
 }
 function genAN() {
-  document.getElementById("outstyle").style.visibility = "hidden";
-  document.getElementById("instyle").style.visibility = "visible";
-  document.getElementById("footer").style.visibility = "visible";
+  document.getElementById("outstyle").style.display = "none";
+  document.getElementById("instyle").style.display = "block";
 
 }
 </script>
